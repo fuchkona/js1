@@ -1,0 +1,40 @@
+div {
+    padding: 5px 15px;
+    margin-bottom: 15px;
+}
+
+.task1 {
+    background-color: lightblue;
+}
+
+.task2 {
+    background-color: lightsalmon;
+}
+
+.task3 {
+    background-color: lightcyan;
+}
+
+.task4 {
+    background-color: lightseagreen;
+}
+
+.task5 {
+    background-color: lightcoral;
+}
+
+.task6 {
+    background-color: lightblue;
+}
+
+.task7 {
+    background-color: lightsteelblue;
+}
+
+.task8 {
+    background-color: lightpink;
+}
+
+.log {
+    background-color: lightgreen;
+}

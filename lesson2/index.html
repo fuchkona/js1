@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Lesson 2 by Nik</title>
+    <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+<div class="task1">
+    <p>1. Почему код даёт именно такие результаты?</p>
+    <pre>
+    var a = 1, b = 1, c, d;
+    c = ++a; log(c); // 2
+    d = b++; log(d); // 1
+    c = (2+ ++a); log(c); // 5
+    d = (2+ b++); log(d); // 4
+    log(a); // 3
+    log(b); // 3
+    </pre>
+    <button onclick="task1()">Выполнить задание 1</button>
+</div>
+<div class="task2">
+    <p>2. Чему будет равен x в примере ниже? </p>
+    <pre>
+    var a = 2;
+    var x = 1 + (a *= 2);
+    </pre>
+    <button onclick="task2()">Выполнить задание 2</button>
+</div>
+<div class="task3">
+    <p>3. Объявить две целочисленные переменные a и b и задать им произвольные начальные значения.</p>
+    <p>Затем написать скрипт, который работает по следующему принципу:</p>
+    <ul>
+        <li>если a и b положительные, вывести их разность;</li>
+        <li>если а и b отрицательные, вывести их произведение;</li>
+        <li>если а и b разных знаков, вывести их сумму; (ноль можно считать положительным числом)</li>
+    </ul>
+    <button onclick="task3()">Выполнить задание 3</button>
+</div>
+<div class="task4">
+    <p>4. Присвоить переменной а значение в промежутке [0..15].
+        С помощью оператора switch организовать вывод чисел от a до 15.
+    </p>
+    <button onclick="task4()">Выполнить задание 4</button>
+</div>
+<div class="task5">
+    <p>5. Реализовать основные 4 арифметические операции в виде функций с двумя параметрами.</p>
+    <p>Обязательно использовать оператор return.</p>
+    <p><b>Реализовано:</b></p>
+    <pre>
+    function summ(a, b) {
+        return a + b;
+    }
+    function diff(a, b) {
+        return a - b;
+    }
+    function mult(a, b) {
+        return a * b;
+    }
+    function div(a, b) {
+        return a / b;
+    }
+    </pre>
+    <button onclick="log(sum(10, 20))">Сумма 10+20</button>
+    <button onclick="log(diff(10, 20))">Разность 10+20</button>
+    <button onclick="log(mult(10, 20))">Умножение 10+20</button>
+    <button onclick="log(div(10, 20))">Деление 10+20</button>
+</div>
+<div class="task6">
+    <p>6. Реализовать функцию с тремя параметрами: function mathOperation(arg1, arg2, operation)</p>
+    <p>где arg1, arg2 – значения аргументов, operation – строка с названием операции.
+        В зависимости от переданного значения операции выполнить одну из арифметических операций (использовать функции
+        из пункта 3) и вернуть полученное значение (использовать switch).</p>
+    <p><b>Реализовано:</b></p>
+    <pre>
+    function mathOperation(arg1, arg2, operation) {
+        switch(operation) {
+            case "+":
+                return summ(arg1, arg2);
+            case "-":
+                return diff(arg1, arg2);
+            case "*":
+                return mult(arg1, arg2);
+            case "/":
+                return div(arg1, arg2);
+        }
+    }
+    </pre>
+    <button onclick="task6()">Выполнить задание 6</button>
+</div>
+<div class="task7">
+    <p>null не равно 0, так-как 0 это конкретное число а null это отсутствие значения.</p>
+    <button onclick="log(null == 0)">Проверить сравнение null == 0</button>
+    <button onclick="log(null === 0)">Проверить сравнение null === 0</button>
+</div>
+<div class="task8">
+    <p>С помощью рекурсии организовать функцию факториала.
+        Факторииал числа – это число, умноженное на «себя минус один», затем на «себя минус два» и так далее, до
+        единицы. Обозначается n!
+        n! = n * (n - 1) * (n - 2) * ...*1
+    </p>
+    <button onclick="task8()">Выполнить задание 8</button>
+</div>
+<div class="log">
+    <ul id="log"></ul>
+</div>
+<script src="js/main.js" type="text/javascript"></script>
+</body>
+</html>

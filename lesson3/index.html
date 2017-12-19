@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Lesson 3 by Nik</title>
+    <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+<div class="task1">
+    <p>С помощью цикла while вывести все простые числа в промежутке от 0 до 100</p>
+    <button onclick="task1(100)">От 0 до 100</button>
+    <button onclick="task1(randomNum(2, 2000))">От 0 до Случайного</button>
+</div>
+<div class="task2">
+    <p>С помощью цикла do…while написать функцию для вывода чисел от 0 до 10, чтобы результат выглядел так:</p>
+    <pre>
+    0 – это ноль
+    1 – нечетное число
+    2 – четное число
+    3 – нечетное число
+    …
+    10 – четное число
+    </pre>
+    <button onclick="task2(10)">Вывести</button>
+</div>
+<div class="task3">
+    <p>Вывести с помощью цикла for числа от 0 до 9, НЕ используя тело цикла. То есть выглядеть должно вот так: for(…){// здесь пусто}</p>
+    <button onclick="task3(9)">Вывести</button>
+</div>
+<div class="task4">
+    <p>Нарисовать пирамиду с помощью console.log, как показано на рисунке, только у вашей пирамиды должно быть 20 рядов, а не 5:</p>
+    <pre>
+    x
+    xx
+    xxx
+    xxxx
+    xxxxx
+    </pre>
+    <button onclick="task4(20)">Вывести</button>
+</div>
+<div class="log">
+    <ul id="log"></ul>
+</div>
+<script src="js/main.js" type="text/javascript"></script>
+</body>
+</html>

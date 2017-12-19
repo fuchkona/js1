@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Lesson 4 by Nik</title>
+    <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+<div class="task1">
+    <p>Написать функцию, преобразующую число в объект.</p>
+    <ul>
+        <li>Передавая на вход число от 0 до 999, мы должны получить на выходе объект, в котором в соответствующих
+            свойствах описаны единицы, десятки и сотни.
+        </li>
+        <li>Например, для числа 245 мы должны получить следующий объект: {‘единицы’: 5, ‘десятки’: 4, ‘сотни’: 2}.</li>
+        <li>Если число превышает 999, необходимо выдать соответствующее сообщение с помощью `console.log` и вернуть
+            пустой объект.
+        </li>
+    </ul>
+    <input type="number" id="task1-input" value="123" title="">
+    <button onclick="task1()">Выполнить</button>
+</div>
+<div class="task2">
+    <p>Выписать сделанные пользователем ходы в массив и вывести их по окончании игры</p>
+    <button onclick="task2()">Сыграть</button>
+</div>
+<div class="log">
+    <ul id="log"></ul>
+</div>
+<script src="js/main.js" type="text/javascript"></script>
+</body>
+</html>

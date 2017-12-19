@@ -1,0 +1,25 @@
+div {
+    padding: 5px 15px;
+    margin-bottom: 15px;
+}
+
+.fahrenheit {
+    background-color: lightblue;
+}
+
+.variables {
+    background-color: lightcoral;
+}
+
+.dop-1 {
+    background-color: lightsalmon;
+}
+
+.dop-2 {
+    background-color: lightseagreen;
+    color: white;
+}
+
+.log {
+    background-color: lightgreen;
+}

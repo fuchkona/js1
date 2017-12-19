@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: gold;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1200px;
+    padding: 15px 15px;
+    background: rgba(255, 255, 255, .4);
+    border: 1px solid darkgoldenrod;
+    min-height: 100%;
+    border-radius: 30px;
+}
+
+.slider {
+    border: 1px solid darkgoldenrod;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.preview {
+    position: relative;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background-color: black;
+}
+
+.preview > span {
+    position: absolute;
+    background: rgba(0, 0, 0, .4);
+    bottom: 0;
+    font-size: 80px;
+    color: white;
+    padding: 0 15px;
+    cursor: pointer;
+    transition: transform .3s ease-in-out;
+}
+
+.preview > span:hover {
+    transform: scale(1.3);
+}
+
+.preview > span.left {
+    left: 0;
+    border-top-right-radius: 30px;
+}
+
+.preview > span.right {
+    right: 0;
+    border-top-left-radius: 30px;
+}
+
+.preview img {
+    width: 100%;
+    min-height: 100%;
+    opacity: 1;
+    transition: opacity .25s ease-in-out, transform 1s ease-in-out;
+}
+
+.preview img:hover {
+    transform: scale(1.2);
+}
+
+.thumbnails {
+    position: relative;
+    display: flex;
+    height: 200px;
+    width: 100%;
+    overflow: hidden;
+    border-top: 1px solid darkgoldenrod;
+}
+
+.thumbnails p {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: rgba(255, 255, 255, .8);
+    padding: 3px;
+    border-radius: 3px;
+    font-size: xx-large;
+    transition: opacity .5s ease-out;
+}
+
+.thumbnails img {
+    height: 100%;
+    cursor: pointer;
+    transition: transform .2s ease-in-out;
+}
+
+.thumbnails img:hover {
+    transform: scale(1.1);
+    transition: transform .5s ease-in-out;
+}
+
+.thumbnails span {
+    position: absolute;
+    font-size: xx-large;
+    height: 100%;
+    background: rgba(0, 0, 0, .4);
+    color: white;
+    padding: 80px 15px 0;
+    cursor: pointer;
+}
+
+.thumbnails span.left {
+    left: 0;
+}
+
+.thumbnails span.right {
+    right: 0;
+}
+
+.shop {
+    display: flex;
+    margin-top: 15px;
+}
+
+.shop > div {
+    background: rgba(255, 255, 255, .3);
+    padding: 15px 15px;
+    border: 1px solid gold;
+}
+
+.shop > div > h2 {
+    border-bottom: 1px solid gold;
+    margin-bottom: 10px;
+}
+
+.col-left {
+    width: 800px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.col-right {
+    width: 390px;
+    margin-left: 10px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.goods {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.good {
+    width: 24%;
+    background: rgba(255, 255, 255, .4);
+    margin-bottom: 15px;
+    border-radius: 15px;
+    border: 1px solid gold;
+}
+
+.good:hover {
+    box-shadow: 0 0 3px gray;
+}
+
+.good > .title {
+    padding: 5px 15px;
+    border-bottom: 1px solid gold;
+}
+
+.good > .price {
+    padding: 5px 15px;
+    border-top: 1px solid gold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.good > .price > a, button {
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    border: 1px solid gold;
+    padding: 3px 10px;
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, .4);
+    user-select: none;
+}
+
+.good > .price > a:hover, button:hover {
+    background-color: rgba(0, 0, 0, .1);
+}
+
+button {
+    margin: 5px 0;
+}
+
+.good > img {
+    max-width: 100%;
+    height: 200px;
+}
+
+#cart-body {
+    width: 100%;
+    border-spacing: 0;
+    background-color: rgba(255, 255, 255, .4);
+}
+
+#cart-body td {
+    border: 1px solid gold;
+    padding: 3px;
+}

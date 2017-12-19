@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Lesson 6 by Nik</title>
+    <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <div class="slider">
+        <div class="preview">
+            <img id="preview-img" src="img/big/img-1.jpg" alt="">
+            <span id="previous-slide" class="left">&hookleftarrow;</span>
+            <span id="next-slide" class="right">&hookrightarrow;</span>
+        </div>
+        <div id="thumbnails" class="thumbnails">
+            <img src="img/small/img-1.jpg" alt="">
+            <img src="img/small/img-2.jpg" alt="">
+            <img src="img/small/img-3.jpg" alt="">
+            <img src="img/small/img-4.jpg" alt="">
+            <img src="img/small/img-5.jpg" alt="">
+            <img src="img/small/img-6.jpg" alt="">
+            <img src="img/small/img-7.jpg" alt="">
+            <p>You can scroll it ;-)</p>
+        </div>
+    </div>
+    <div class="shop">
+        <div class="col-left">
+            <h2>Goods:</h2>
+            <div class="goods">
+                <div class="good">
+                    <p class="title">Angel</p>
+                    <img src="img/goods/angel1.png" alt="">
+                    <div class="price">
+                        <a class="add-to-cart-btn">Add to cart</a>
+                        <span>1 $</span>
+                    </div>
+                </div>
+                <div class="good">
+                    <p class="title">Cookie</p>
+                    <img src="img/goods/cookie1.png" alt="">
+                    <div class="price">
+                        <a class="add-to-cart-btn">Add to cart</a>
+                        <span>2 $</span>
+                    </div>
+                </div>
+                <div class="good">
+                    <p class="title">Snowflake</p>
+                    <img src="img/goods/snowflake.png" alt="">
+                    <div class="price">
+                        <a class="add-to-cart-btn">Add to cart</a>
+                        <span>1.5 $</span>
+                    </div>
+                </div>
+                <div class="good">
+                    <p class="title">Toy 1</p>
+                    <img src="img/goods/toy1.png" alt="">
+                    <div class="price">
+                        <a class="add-to-cart-btn">Add to cart</a>
+                        <span>1.5 $</span>
+                    </div>
+                </div>
+                <div class="good">
+                    <p class="title">Toy 2</p>
+                    <img src="img/goods/toy2.png" alt="">
+                    <div class="price">
+                        <a class="add-to-cart-btn">Add to cart</a>
+                        <span>2 $</span>
+                    </div>
+                </div>
+                <div class="good">
+                    <p class="title">Tree 1</p>
+                    <img src="img/goods/tree1.png" alt="">
+                    <div class="price">
+                        <a class="add-to-cart-btn">Add to cart</a>
+                        <span>3 $</span>
+                    </div>
+                </div>
+                <div class="good">
+                    <p class="title">Tree 2</p>
+                    <img src="img/goods/tree2.png" alt="">
+                    <div class="price">
+                        <a class="add-to-cart-btn">Add to cart</a>
+                        <span>2 $</span>
+                    </div>
+                </div>
+                <div class="good">
+                    <p class="title">Tree 3</p>
+                    <img src="img/goods/tree5.png" alt="">
+                    <div class="price">
+                        <a class="add-to-cart-btn">Add to cart</a>
+                        <span>1.5 $</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-right">
+            <h2>Cart:</h2>
+            <table id="cart-body">
+
+            </table>
+            <button id="clear-cart-btn" onclick="window.sessionStorage.setItem('goods', null); location.reload();">Clear cart</button>
+        </div>
+    </div>
+</div>
+<script src="js/main.js" type="text/javascript"></script>
+</body>
+</html>
